@@ -88,10 +88,10 @@ open class CFAlertViewController: UIViewController    {
                     }
                     
                     self.containerViewTopConstraint?.isActive = false
-                    self.containerViewLeadingConstraint?.constant = leading
+                    self.containerViewLeadingConstraint?.constant = self.leading
                     self.containerViewCenterYConstraint?.isActive = true
                     self.containerViewBottomConstraint?.isActive = false
-                    self.containerViewTrailingConstraint?.constant = trailing
+                    self.containerViewTrailingConstraint?.constant = self.trailing
                     
                     self.tableViewWidthConstraint?.constant = 500
                     self.tableViewLeadingConstraint?.priority = UILayoutPriority(rawValue: 751)
@@ -105,10 +105,10 @@ open class CFAlertViewController: UIViewController    {
                     }
                     
                     self.containerViewTopConstraint?.isActive = false
-                    self.containerViewLeadingConstraint?.constant = leading
+                    self.containerViewLeadingConstraint?.constant = self.leading
                     self.containerViewCenterYConstraint?.isActive = false
                     self.containerViewBottomConstraint?.isActive = true
-                    self.containerViewTrailingConstraint?.constant = trailing
+                    self.containerViewTrailingConstraint?.constant = self.trailing
                     
                     self.tableViewWidthConstraint?.constant = 500
                     self.tableViewLeadingConstraint?.priority = UILayoutPriority(rawValue: 751)
