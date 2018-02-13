@@ -44,6 +44,8 @@ open class CFAlertViewController: UIViewController    {
     
     // MARK: - Variables
     // MARK: Public
+    public var leading: CGFloat = 10
+    public var trailing: CGFloat = 10
     public internal(set) var textAlignment = NSTextAlignment(rawValue: 0)
     public internal(set) var preferredStyle = CFAlertControllerStyle(rawValue: 0)    {
         didSet  {
@@ -86,10 +88,10 @@ open class CFAlertViewController: UIViewController    {
                     }
                     
                     self.containerViewTopConstraint?.isActive = false
-                    self.containerViewLeadingConstraint?.constant = 10
+                    self.containerViewLeadingConstraint?.constant = leading
                     self.containerViewCenterYConstraint?.isActive = true
                     self.containerViewBottomConstraint?.isActive = false
-                    self.containerViewTrailingConstraint?.constant = 10
+                    self.containerViewTrailingConstraint?.constant = trailing
                     
                     self.tableViewWidthConstraint?.constant = 500
                     self.tableViewLeadingConstraint?.priority = UILayoutPriority(rawValue: 751)
@@ -103,10 +105,10 @@ open class CFAlertViewController: UIViewController    {
                     }
                     
                     self.containerViewTopConstraint?.isActive = false
-                    self.containerViewLeadingConstraint?.constant = 10
+                    self.containerViewLeadingConstraint?.constant = leading
                     self.containerViewCenterYConstraint?.isActive = false
                     self.containerViewBottomConstraint?.isActive = true
-                    self.containerViewTrailingConstraint?.constant = 10
+                    self.containerViewTrailingConstraint?.constant = trailing
                     
                     self.tableViewWidthConstraint?.constant = 500
                     self.tableViewLeadingConstraint?.priority = UILayoutPriority(rawValue: 751)
